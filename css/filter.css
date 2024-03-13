@@ -1,0 +1,26 @@
+.nav-pills .nav-link.active,
+.nav-pills .show.nav-link {
+  background-color: var(--primary-text-color);
+  color: var(--primary-color);
+}
+
+.nav-pills .nav-link {
+  border: solid 1px;
+  font-family: myFont;
+  font-weight: bold;
+  color: var(--primary-text-color);
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+
+.nav-item {
+  margin: 0.5rem;
+}
+
+#nav-filter {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mayank</title>
+
+  <!-- fonts and stuff -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet" />
+
+  <!-- OUR CSS -->
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/bg.css" />
+  <link rel="stylesheet" href="./css/slider.css" />
+<link rel="stylesheet" href="./css/filter.css">
+</head>
+<!-- Animated BG -->
+
+<body class="dark" id="body">
+  <div class="blob-c">
+    <div class="shape-blob"></div>
+    <div class="shape-blob one"></div>
+    <div class="shape-blob two"></div>
+    <div class="shape-blob three"></div>
+    <div class="shape-blob four"></div>
+    <div class="shape-blob five"></div>
+    <div class="shape-blob six"></div>
+  </div>
+
+  <!-- NAVIGATION BAR -->
+  <section class="navbar-section" id="nav-section">
+    <div class="navbar" id="nav">
+      <div class="nav-link link-active clickable" id="work-link">
+        <p>Work</p>
+      </div>
+      <div class="nav-link clickable" id="about-link">
+        <p>About</p>
+      </div>
+      <div class="nav-link clickable" id="certifications-link">
+        <p>Certifications</p>
+      </div>
+      <div class="nav-link clickable" id="contact-link">
+        <p>Contact</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <section id="main-content"></section>
+
+  <!-- Footer -->
+  <footer class="container footer">
+    <div class="row">
+      <div class="col-md-6">
+        <p class="d-none d-sm-block">© Mayank Kathane</p>
+      </div>
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-6">
+            <h3>Find My</h3>
+            <ul class="list-unstyled">
+              <li class="list-item">
+                <a href="https://github.com/imayank45" target="_blank">Github</a>
+              </li>
+              <li class="list-item">
+                <a href="https://www.linkedin.com/in/mayank-kathane-b30a52204?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  target="_blank">Linked IN</a>
+              </li>
+              <li class="list-item">
+                <a href="https://www.instagram.com/mayankkathane45?igsh=MXA1MXBmMTM2YmtzcA=="
+                  target="_blank">Instagram</a>
+              </li>
+              <li class="list-item">
+                <a href="https://x.com/MayankKath88638?t=GU-Hk1Qmadp2CtrT2_awSw&s=08" target="_blank">X (Formally
+                  Twitter)</a>
+              </li>
+              <li class="list-item">
+                <a href="./resume.pdf" target="_blank">Resume</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 end-0">
+            <h3>Contact</h3>
+            <ul class="list-unstyled">
+              <li class="list-item">
+                <a href="mailto: maykathane45@gmail.com" target="_blank">E-Mail</a>
+              </li>
+              <li class="list-item">
+                <a target="_blank"
+                  href="https://wa.me/919130966527?text=Hello,%20I%20saw%20your%20portfolio%20website,%20and%20I%20want%20to%20discuss....%20">Whatsapp</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODE SELECTOR -->
+    <div class="mode-selector">
+      <div class="power-switch m-auto" onclick="toggleDark()">
+        <input type="checkbox" id="dark-mode" />
+        <div class="button">
+          <svg class="power-off">
+            <use xlink:href="#line" class="line" />
+            <use xlink:href="#circle" class="circle" />
+          </svg>
+          <svg class="power-on">
+            <use xlink:href="#line" class="line" />
+            <use xlink:href="#circle" class="circle" />
+          </svg>
+        </div>
+      </div>
+
+      <!-- SVG -->
+      <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" id="line">
+          <line x1="75" y1="34" x2="75" y2="58" />
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" id="circle">
+          <circle cx="75" cy="80" r="35" />
+        </symbol>
+      </svg>
+    </div>
+  </footer>
+  <!-- END FOOTER -->
+
+  <!-- JavaScript -->
+
+  <script src="./index.js"></script>
+  <script src="https://kit.fontawesome.com/5522533868.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Automatically start the carousel
+      $("#carouselExampleIndicators").carousel({
+        interval: 2000, // Adjust the interval in milliseconds (2000ms = 2 seconds)
+      });
+    });
+  </script>
+
+
+</body>
+
+</html>
