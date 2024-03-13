@@ -96,3 +96,6 @@ function toggleCertifications() {
 }
 
 toggleWork();
+
+
+// loadPage(`Projects/coffee`);
