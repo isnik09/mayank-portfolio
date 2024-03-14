@@ -97,5 +97,28 @@ function toggleCertifications() {
 
 toggleWork();
 
-
 // loadPage(`Projects/coffee`);
+
+
+
+// var observer = new MutationObserver(function (mutations) {
+//   mutations.forEach(function (mutation) {
+//     // Check if new nodes have been added
+//     if (mutation.addedNodes && mutation.addedNodes.length > 0) {
+//       // Loop through added nodes
+//       mutation.addedNodes.forEach(function (node) {
+//         // Check if the added node is the one you're interested in (example: a div)
+//         if (node.nodeName === "DIV" && node.id === "myIFrame") {
+//           // Your logic here for elements within the dynamically loaded div
+//           alert("New div added:", node);
+//         }
+//       });
+//     }
+//   });
+// });
+
+// // Start observing changes in the container div
+// observer.observe(document.getElementById("main-content"), {
+//   childList: true, // Observe changes to the child nodes (i.e., when new nodes are added)
+//   subtree: true, // Observe changes in the subtree (i.e., all descendant nodes)
+// });
