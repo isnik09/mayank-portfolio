@@ -138,12 +138,20 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script>
     $(document).ready(function () {
-      // Automatically start the carousel
       $("#carouselExampleIndicators").carousel({
-        interval: 2000, // Adjust the interval in milliseconds (2000ms = 2 seconds)
+        interval: 2000,
       });
     });
   </script>
+
+  <script>
+    $(document).ready(function () {
+      setTimeout(function () {
+        $('#myAlert').fadeOut('slow');
+      }, 10);
+    });
+  </script>
+
 
 
 </body>
