@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>PROJECT TITLE</title>
+
+
+    <!-- fonts and stuff -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet" />
+
+
+
+    <!-- OUR CSS -->
+    <link rel="stylesheet" href="../../css/bg.css" />
+    <link rel="stylesheet" href="../../css/styles.css" />
+    <link rel="stylesheet" href="../../css/projects.css">
+
+</head>
+
+
+
+
+
+<body class="dark" id="body">
+
+
+
+    <section id="main-content">
+
+        <!-- HEADER -->
+        <div class="project-nav focus-in-expand">
+            <div class="back" onclick="goBack()">
+                <i class="fa-solid fa-arrow-left-long"></i>
+            </div>
+            <div>
+                <h1>Projects</h1>
+            </div>
+        </div>
+
+        <!-- TITLE -->
+
+        <h1>PROJECT TITLE</h1>
+
+        <!-- IMAGES -->
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/Olympic/1.jpeg" class="d-block w-100 img-responsive" alt="Slide 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/Olympic/2.jpeg" class="d-block w-100 img-responsive" alt="Slide 2">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./images/Olympic/3.jpeg" class="d-block w-100 img-responsive" alt="Slide 3">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./images/Olympic/4.jpeg" class="d-block w-100 img-responsive" alt="Slide 4">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./images/Olympic/5.jpeg" class="d-block w-100 img-responsive" alt="Slide 5">
+                </div>
+
+
+
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+
+
+
+
+        <!-- Project Desc -->
+        <div class="btn-container">
+            <button class="btn-p"
+                onclick="openWebPage('https://github.com/imayank45/Olympics-Data-Analysis-Web-Application')">
+                View Code
+                <i class="fa-brands fa-github"></i>
+            </button>
+
+            <button class="btn-p"
+                onclick="openWebPage('https://olympics-data-analysis-web-application-by-mayank.streamlit.app/')">
+                View Deployment
+                <i class="fa-solid fa-globe"></i>
+            </button>
+        </div>
+
+        <h2>Tech Stack</h2>
+
+        <div class="skills">
+            <div class="col skill-content">
+                <p>Python</p>
+            </div>
+            <div class="col skill-content">
+                <p>NumPy</p>
+            </div>
+            <div class="col skill-content">
+                <p>Pandas</p>
+            </div>
+            <div class="col skill-content">
+                <p>Plotly</p>
+            </div>
+            <div class="col skill-content">
+                <p>Seaborn</p>
+            </div>
+            <div class="col skill-content">
+                <p>Matplotlib</p>
+            </div>
+            <div class="col skill-content">
+                <p>Streamlit</p>
+            </div>
+            <div class="col skill-content">
+                <p>Heroku</p>
+            </div>
+        </div>
+
+        <h2>Overview</h2>
+        <p class="focus-in-expand">
+            This web application is a dynamic and interactive tool that provides in-depth
+            analysis of Olympic Games data, spanning multiple years and encompassing a
+            variety of sports and countries. It leverages authentic, historical records of
+            the Olympics to offer users a detailed exploration of the Games.
+        </p>
+
+        <div class="key-features">
+            <h2>Key Features</h2>
+            <h4>Medal Tally Analysis</h4>
+            <p>
+                This feature provides a comprehensive look at the medal counts over the
+                years. Users can see how different countries have performed in terms of
+                gold, silver, and bronze medals, and how these tallies have evolved over
+                time.
+            </p>
+            <h4>Overall Analysis with Top Statistics</h4>
+            <p>
+                The application presents an overarching view of the Olympics data,
+                highlighting top statistics. This includes records such as most medals won,
+                outstanding athletic performances, and notable Olympic milestones. These
+                statistics are presented in both tabular and graphical formats for easy
+                comprehension. Country-wise Analysis: Users can dive into country-specific
+                data, exploring how each nation has performed in the Olympics. This feature
+                includes historical trends, medal counts, and notable athletes from each
+                country.
+            </p>
+            <h4>Athlete-wise Analysis</h4>
+            <p>
+                Focusing on individual athletes, this aspect of the application allows users
+                to explore the careers of Olympians, their achievements, records, and
+                progression over different Olympic Games.
+            </p>
+            <h4>Interactive Graphs and Records</h4>
+            <p>
+                The application features a range of interactive graphs and visualizations
+                that make it easy to understand and explore the data. These visual tools are
+                designed to be user-friendly, providing insights at a glance.
+            </p>
+            <h4>Historical Insights and Trends</h4>
+            <p>
+                Through the analysis of past data, the application offers insights into
+                historical trends in the Olympics, such as changes in sporting disciplines,
+                evolution in athletic performance, and shifts in global participation.
+            </p>
+        </div>
+
+
+        <h2>Conclusion</h2>
+        <p>
+            This Olympics Data Analysis Web Application stands as a testament to the power
+            of data analytics in sports, offering a rich, detailed, and accessible way to
+            explore the legacy of the Olympic Games.
+        </p>
+
+
+        <h2>Demo Video</h2>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/h4nJ5yRQiew?si=EhBgBQmXUDTRDC73"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+
+
+
+
+    </section>
+
+
+    <!-- EMPTY DIV FOR SPACING -->
+    <div class="p-5"></div>
+
+    <!-- JavaScript -->
+
+    <script src="../../index.js"></script>
+
+    <script src="https://kit.fontawesome.com/5522533868.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#carouselExampleIndicators").carousel({
+                interval: 2000,
+            });
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>
