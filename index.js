@@ -28,7 +28,10 @@ window.addEventListener("scroll", function (event) {
   }
 });
 
+
+
 // DARK MODE
+
 let checkBox = document.getElementById("dark-mode");
 
 function toggleDark() {
@@ -41,6 +44,8 @@ function toggleDark() {
   }
 }
 
+
+
 // PAGE URL
 
 function openWebPage(url) {
@@ -48,6 +53,8 @@ function openWebPage(url) {
 }
 
 // Autometing dark mode
+
+/*
 let d = new Date();
 const currentHour = d.getHours();
 if (currentHour >= 6 && currentHour <= 18) {
@@ -59,6 +66,8 @@ if (currentHour >= 6 && currentHour <= 18) {
   bodyDiv.classList.remove("light");
   checkBox.checked = false;
 }
+*/
+
 
 // fetcher
 const box = document.getElementById("main-content");
@@ -99,8 +108,6 @@ toggleWork();
 
 // loadPage(`Projects/coffee`);
 
-
-
 // var observer = new MutationObserver(function (mutations) {
 //   mutations.forEach(function (mutation) {
 //     // Check if new nodes have been added
@@ -122,3 +129,14 @@ toggleWork();
 //   childList: true, // Observe changes to the child nodes (i.e., when new nodes are added)
 //   subtree: true, // Observe changes in the subtree (i.e., all descendant nodes)
 // });
+
+// OPENING IN NEW URL
+
+function openInNewURL(webpage) {
+  // window.open(`./Pages/${webpage}.html`);
+  location.replace(`./Pages/${webpage}.html`);
+}
+
+function goBack() {
+  location.replace("../../index.html");
+}
