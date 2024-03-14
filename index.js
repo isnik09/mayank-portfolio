@@ -28,8 +28,6 @@ window.addEventListener("scroll", function (event) {
   }
 });
 
-
-
 // DARK MODE
 
 let checkBox = document.getElementById("dark-mode");
@@ -44,30 +42,11 @@ function toggleDark() {
   }
 }
 
-
-
 // PAGE URL
 
 function openWebPage(url) {
   window.open(url, "_blank");
 }
-
-// Autometing dark mode
-
-/*
-let d = new Date();
-const currentHour = d.getHours();
-if (currentHour >= 6 && currentHour <= 18) {
-  bodyDiv.classList.remove("dark");
-  bodyDiv.classList.add("light");
-  checkBox.checked = true;
-} else {
-  bodyDiv.classList.add("dark");
-  bodyDiv.classList.remove("light");
-  checkBox.checked = false;
-}
-*/
-
 
 // fetcher
 const box = document.getElementById("main-content");
@@ -134,9 +113,10 @@ toggleWork();
 
 function openInNewURL(webpage) {
   // window.open(`./Pages/${webpage}.html`);
-  location.replace(`./Pages/${webpage}.html`);
+  location.replace(`${webpage}.html`);
 }
 
 function goBack() {
-  location.replace("../../index.html");
+  location.replace("index.html");
 }
+// openInNewURL(`multi-language-invoice-extractor`);
