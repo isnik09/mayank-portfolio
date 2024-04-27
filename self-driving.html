@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Self Driving Car Using OpenCV</title>
+
+
+    <!-- fonts and stuff -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet" />
+
+
+
+    <!-- OUR CSS -->
+    <link rel="stylesheet" href="./css/bg.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/projects.css">
+
+</head>
+
+
+
+
+
+<body class="dark" id="body">
+
+
+
+    <section id="main-content">
+
+        <!-- HEADER -->
+        <div class="project-nav focus-in-expand">
+            <div class="back" onclick="goBack()">
+                <i class="fa-solid fa-arrow-left-long"></i>
+            </div>
+            <div>
+                <h1>Projects</h1>
+            </div>
+        </div>
+
+        <!-- TITLE -->
+
+        <h1>Self Driving Car Using OpenCV</h1>
+
+        <!-- IMAGES -->
+
+         
+
+
+
+
+
+        <!-- Project Desc -->
+        <div class="btn-container">
+            <button class="btn-p"
+                onclick="openWebPage('https://github.com/imayank45/Fashion-Recommendation-System')">
+                View Code
+                <i class="fa-brands fa-github"></i>
+            </button>
+
+            
+        </div>
+
+        <h2>Tech Stack</h2>
+
+        <div class="skills">
+            <div class="col skill-content">
+                <p>Python</p>
+            </div>
+            <div class="col skill-content">
+                <p>OpenCV</p>
+            </div>
+            <div class="col skill-content">
+                <p>Socketio</p>
+            </div>
+            <div class="col skill-content">
+                <p>CNN</p>
+            </div>
+            <div class="col skill-content">
+                <p>NVIDIA</p>
+            </div>
+            <div class="col skill-content">
+                <p>Car Simulator</p>
+            </div>
+            
+        </div>
+
+        <h2>Overview</h2>
+        <p class="focus-in-expand">
+            The "Self Driving Car Using OpenCV" project leverages computer vision techniques implemented 
+            with OpenCV and machine learning models developed using TensorFlow/Keras to enable a car to 
+            drive autonomously. The project involves collecting driving data, preprocessing it, training a 
+            deep neural network model, and deploying the model to control the car's steering and throttle in 
+            real-time. This system aims to demonstrate the fusion of computer vision and machine learning 
+            for autonomous vehicle navigation.
+        </p>
+
+        <div class="key-features">
+            <h2>Key Features</h2>
+            <h4>Data Collection and Preprocessing</h4>
+            <p>
+                Data is collected using a simulator and stored in a CSV file containing information about 
+                image paths and corresponding steering angles. Images are preprocessed to focus on the 
+                region of interest, converted to the YUV color space, resized, and normalized.
+            </p>
+            <h4>Data Augmentation</h4>
+            <p>
+                Various data augmentation techniques such as zooming, panning, brightness alteration, and 
+                flipping are applied to increase the diversity of training data and improve model 
+                generalization.
+            </p>
+            <h4>Model Architecture</h4>
+            <p>
+                Constructs a convolutional neural network (CNN) model inspired by NVIDIA's architecture for 
+                self-driving cars. The model is trained on the preprocessed data to predict steering angles 
+                based on input images.
+            </p>
+            <h4>Training and Validation</h4>
+            <p>
+                Training includes data augmentation techniques such as zoom, pan, brightness alteration, 
+                and horizontal flipping to enhance model robustness.
+                The model is trained on augmented data generated from the collected images. Training 
+                progress is monitored using validation data, and the mean squared error (MSE) loss function 
+                is minimized using the Adam optimizer.
+            </p>
+            <h4>Deployment</h4>
+            <p>
+                The trained model is deployed on a web server using Flask and Socket.IO. The server 
+                communicates with a front-end client, receiving telemetry data (image and speed) and 
+                sending back control commands (steering angle and throttle) to control the simulated car.
+            </p>
+            <h4>Speed Limit</h4>
+            <p>
+                A speed limit is enforced to ensure safe driving, and throttle is adjusted accordingly 
+                based on the current speed of the car.
+            </p>
+            <h4>Real-time Control</h4>
+            <p>
+                The deployed system allows real-time control of the simulated car, where the model predicts 
+                steering angles based on input images and adjusts throttle based on speed, enabling 
+                autonomous driving in the simulator.
+            </p>
+            
+        </div>
+
+
+        <h2>Conclusion</h2>
+        <p>
+            Fashion Recommendation System with Image Recognition represents a significant advancement in the 
+            field of fashion technology, bridging the gap between visual inspiration and actionable 
+            recommendations. By harnessing the power of deep learning and recommendation algorithms, the 
+            system empowers users to discover new styles, explore trending fashion items, and curate their 
+            unique wardrobe effortlessly. With its intuitive interface and personalized approach, the 
+            application promises to redefine the fashion shopping experience, making it more engaging, 
+            interactive, and enjoyable for users worldwide.
+        </p>
+
+
+        
+
+
+
+
+    </section>
+
+
+    <!-- EMPTY DIV FOR SPACING -->
+    <div class="p-5"></div>
+
+    <!-- JavaScript -->
+
+    <script src="./index.js"></script>
+
+    <script src="https://kit.fontawesome.com/5522533868.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#carouselExampleIndicators").carousel({
+                interval: 2000,
+            });
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>
